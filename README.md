@@ -142,3 +142,5 @@ kubectl get svc -n game-2048
 ```
 ## Project Completion
 Your EKS cluster and application are now successfully deployed with an ALB Ingress Controller. The application is accessible via the DNS name provided by the ALB.
+
+![Screenshot 2023-08-03 at 7 57 15 PM](https://github.com/iam-veeramalla/aws-devops-zero-to-hero/assets/43399466/93b06a9f-67f9-404f-b0ad-18e3095b7353)
