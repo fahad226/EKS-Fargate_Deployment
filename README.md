@@ -22,9 +22,11 @@ Use `eksctl` to create a new EKS cluster with Fargate (serverless Kubernetes) en
 ```bash
 eksctl create cluster --name demo-cluster --region us-east-1 --fargate
 ```
-![Image Description](path/to/image.png)
-
 This command creates a managed EKS cluster named demo-cluster in the us-east-1 region.
+
+
+![1](https://github.com/user-attachments/assets/f092100e-3332-4d1f-b763-8b40397c3a22)
+
 
 ### 2. Update kubeconfig
 
@@ -47,7 +49,7 @@ eksctl create fargateprofile \
 ```
 This command creates a new namespace (game-2048) where we will deploy the application.
 
-![Image Description](path/to/image.png)
+![3](https://github.com/user-attachments/assets/5ee6896f-cca1-48e6-a974-93178c169faa)
 
 ### 4. Deploy Application Resources
 To deploy the application and its associated resources, apply the following manifest file:
@@ -75,7 +77,8 @@ The ALB controller requires IAM access. Associate an IAM OIDC provider with the 
 ```
 eksctl utils associate-iam-oidc-provider --cluster demo-cluster --approve
 ```
-![Image Description](path/to/image.png)
+![5](https://github.com/user-attachments/assets/e80bbb56-1c5e-4a52-8cf6-a7207c269290)
+
 
 ### 2. Create IAM Policy for ALB Controller
 Download the required IAM policy for the ALB controller:
